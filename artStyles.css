@@ -1,0 +1,52 @@
+/*Josefin Sans Font*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+h1{
+font-size: 48px;
+font-family: 'Josefin Sans', sans-serif;
+text-align: center
+}
+h2{
+  font-size: 36px;
+  font-family:'Josefin Sans', sans-serif;
+  text-decoration: underline;
+  text-align: left;
+}
+#background{
+  font-size: 36px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body{
+  text-align: center;
+}
+#girl{
+  width: 100%;
+}
+#lion{
+  width: 100%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Impressionism</title>
+</head>
+    <link rel="stylesheet" type="text/css" href="impressionalism.css">
+
+<script>
+function im() {
+
+  var imartists, list, length, i;
+  imartists = [
+  "Claude Monet 1840-1926 (Impression, Sunrise 1872)",
+  "Pierre-Auguste Renoir 1841-1919 (Bal du moulin de la Galette 1876)",
+  "Berthe Morisot 1903-1970 (Summer's Day 1879)",
+  "Mary Cassatt 1844-1926 (The Child's Bath 1893)"
+
+  ];
+  length = imartists.length;
+
+  list = "<ul>";
+  for (i = 0; i < length; i++) {
+    list += "<li>" + imartists[i] + "</li>";
+}
+list += "</ul>";
+
+document.getElementById("demo").innerHTML = list;
+}
+
+function changeImage() {
+
+       if (document.getElementById("imgClickAndChange").src == "monet.jpg")
+       {
+           document.getElementById("imgClickAndChange").src = "isunrise.jpg";
+       }
+      /* if (document.getElementById("imgClickAndChange").src == "No5.jpg")
+       {
+           document.getElementById("imgClickAndChange").src = "impressionalism1.jpg";
+       }*/
+       else
+       {
+           document.getElementById("imgClickAndChange").src = "isunrise.jpg";
+       }
+   }
+
+   function changeImage2() {
+
+          if (document.getElementById("imgClickAndChange2").src == "renoir.jpg")
+          {
+              document.getElementById("imgClickAndChange2").src = "galette.jpg";
+          }
+         /* if (document.getElementById("imgClickAndChange").src == "No5.jpg")
+          {
+              document.getElementById("imgClickAndChange").src = "impressionalism1.jpg";
+          }*/
+          else
+          {
+              document.getElementById("imgClickAndChange2").src = "galette.jpg";
+          }
+      }
+
+      function changeImage3() {
+
+             if (document.getElementById("imgClickAndChange3").src == "morisot.jpg")
+             {
+                 document.getElementById("imgClickAndChange3").src = "summersday.jpg";
+             }
+            /* if (document.getElementById("imgClickAndChange").src == "No5.jpg")
+             {
+                 document.getElementById("imgClickAndChange").src = "impressionalism1.jpg";
+             }*/
+             else
+             {
+                 document.getElementById("imgClickAndChange3").src = "summersday.jpg";
+             }
+         }
+         function changeImage4() {
+
+                if (document.getElementById("imgClickAndChange4").src == "cassatt.jpg")
+                {
+                    document.getElementById("imgClickAndChange4").src = "childbath.jpg";
+                }
+               /* if (document.getElementById("imgClickAndChange").src == "No5.jpg")
+                {
+                    document.getElementById("imgClickAndChange").src = "impressionalism1.jpg";
+                }*/
+                else
+                {
+                    document.getElementById("imgClickAndChange4").src = "childbath.jpg";
+                }
+            }
+</script>
+
+
+<body background="light brown.jpg">
+
+<h1> Impressionist Art</h1>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <img src="impressionalism1.jpg"width = "25%" height = "25%">
+      <img src="impressionalism2.jpg"width = "25%" height = "25%">
+      <img src="impressionalism3.jpg"width = "25%" height = "25%">
+      <img src="impressionalism4.jpg"width = "23%" height = "25%">
+
+<h2>Background</h2>
+    <p id="b1">
+        Impressionism was a movement that began in the 19th-century which utilized "relatively small,
+        thin, yet visible brush strokes, open composition, emphasis on accurate depiction
+        of light in its changed qualities (often accentuated the effects of the passage of time),
+         ordinary subject matter, inclusion of movement as a crucial element of human perception and
+         experience, and unusual visual angles." Impressionism originated with a group of Paris-based
+         artists whose independent exhibitions brought them to prominence during the 1870s and 1880s.
+         (MOMA)
+    </p>
+
+    <p id="b2">
+       Impressionists faced harsh opposition from the conventional art community in France.
+       The name of the style derives from the title of a Claude Monet work, Impression,
+       soleil levant (Impression, Sunrise), which provoked the critic Louis Leroy to coin
+       the term in a satirical review published in the Parisian newspaper Le Charivari.
+       (MOMA)
+    </p>
+
+      <button id="im1" onclick="im()">Famous Impressionist Artists</button>
+        <p id="demo"></p>
+
+        <img src="monet.jpg"
+              style="height: 25%; width: 25%" id="imgClickAndChange" onclick="changeImage()"  />
+        <img src="renoir.jpg"
+              style="height: 25%; width: 25%" id="imgClickAndChange2" onclick="changeImage2()"  />
+        <img src="morisot.jpg"
+              style="height: 25%; width: 25%" id="imgClickAndChange3" onclick="changeImage3()"  />
+        <img src="cassatt.jpg"
+              style="height: 25%; width: 23%" id="imgClickAndChange4" onclick="changeImage4()"  />
+
+</body>
+</html>
